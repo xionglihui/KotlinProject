@@ -44,4 +44,9 @@
     <color name="gray_spash_bg">#e4e4e4</color>
     <color name="line_bg_cccccc">#d4d4d4</color>
     <color name="grad_input_p">#cccccc</color>
+
+
+    <color name="title_bg_start">#27408B</color>
+    <color name="title_bg_end">#122661</color>
+
 </resources>

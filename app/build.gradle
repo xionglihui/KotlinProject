@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'me.tatarka.retrolambda'
+
 
 android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.xiong.kotlin.example"
-        minSdkVersion 27
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -20,6 +20,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -29,4 +34,43 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
+    implementation 'com.android.support:design:28.0.0-alpha3'
+    implementation 'com.android.support:recyclerview-v7:28.0.0-alpha3'
+    implementation 'com.android.support:cardview-v7:28.0.0-alpha3'
+    implementation 'com.android.support:palette-v7:28.0.0-alpha3'
+    implementation 'com.android.support:support-annotations:28.0.0-alpha3'
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //    api 'io.reactivex.rxjava2:rxjava:2.0.8'
+    //    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.2.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'cn.pedant.safewebviewbridge:library:1.4'
+    implementation 'com.trello:rxlifecycle:1.0'
+    implementation 'com.trello:rxlifecycle-android:1.0'
+    implementation 'com.trello:rxlifecycle-components:1.0'
+    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
+    //banner
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.umeng.sdk:analytics:7.5.0'
+    //PushSDK必须依赖基础组件库，所以需要加入对应依赖
+    implementation 'com.umeng.sdk:common:1.5.3'
+    //PushSDK必须依赖utdid库，所以需要加入对应依赖
+    implementation 'com.umeng.sdk:utdid:1.1.5.3'
+    //PushSDK
+    implementation 'com.umeng.sdk:push:4.2.0'
+    //图片选择框架
+    implementation 'com.zhihu.android:matisse:0.5.1'
+    //图片压缩框架
+    implementation 'top.zibin:Luban:1.1.7'
 }
