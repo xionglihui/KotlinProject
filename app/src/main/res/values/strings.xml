@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">KotlinExample</string>
+
+    <!--dialog-->
+    <string name="dialog_sure">确定</string>
+    <string name="dialog_cancle">取消</string>
+    <string name="dialog_fish">完成</string>
+    <string name="dialog_photograph">拍照</string>
+    <string name="dialog_select_from_the_album">从相册选择</string>
+    <string name="dialog_title">温馨提示</string>
+
+    <!--异常提示-->
+    <string name="exception_no_authority">对不起，您的账户已经超时，请重新登录</string>
+    <string name="exception_json_error">服务器异常，请稍后再试</string>
+    <string name="exception_netword_error">网络异常，请检查网络后再试</string>
+    <string name="exception_netword_persiom">您拒绝了改权限</string>
+    <string name="app_prty_name">XIAOGE</string>
+
+    <!-- 分享 -->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="weibo_share_success">分享成功</string>
+    <string name="weixin_errcode_deny"> 您的设备还没有安装微信</string>
+    <string name="weibo_share_cancel">分享取消</string>
+    <string name="weibo_cancels">取消</string>
+    <string name="weibo_share_fail">分享失败</string>
+    <string name="weibo_share_error_tip">微博客户端不支持 SDK 分享或微博客户端未安装或微博客户端是非官方版本。</string>
+    <string name="action_qr_code">二维码</string>
+    <string name="action_qr_code_show_tip">邀请您的朋友扫一扫如下二维码并注册成功，您就有可能获得现金奖励哦</string>
+    <string name="share_fenxuan_duanxin">短信</string>
+    <string name="share_fenxuan_qq">QQ好友</string>
+    <string name="share_fenxuan_pengyouquan">微信朋友圈</string>
+    <string name="share_fenxuan_haoyou">微信好友</string>
+    <string name="share_fenxuan_weibo">新浪微博</string>
+    <string name="share_fenxuan_erwei">二维码</string>
+
+    <string name="common_empty_data">暂无数据</string>
 </resources>
